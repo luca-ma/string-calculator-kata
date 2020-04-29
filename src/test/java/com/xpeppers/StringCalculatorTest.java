@@ -55,5 +55,16 @@ public class StringCalculatorTest {
 		new StringCalculator().calculate(inString));
 	}
 	
+	@Test
+	public void multipleDigitWithMultiDelimiter() {
+		inString = "//;\n1;2";
+		expectedStringCalcResult = 3;		
+		assertEquals(expectedStringCalcResult,
+		new StringCalculator().calculate(inString));
+		
+		
+	}
+	
+	
 	
 }
