@@ -47,4 +47,13 @@ public class StringCalculatorTest {
 		new StringCalculator().calculate(inString));
 	}
 
+	@Test
+	public void multipleDigitWithNewLinesTest() {
+		inString = "1\n2,3";
+		expectedStringCalcResult = 6;		
+		assertEquals(expectedStringCalcResult,
+		new StringCalculator().calculate(inString));
+	}
+	
+	
 }
